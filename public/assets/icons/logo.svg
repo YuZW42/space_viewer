@@ -1,0 +1,32 @@
+ <svg id="space-viewer-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 58 58">
+
+    <!-- Gradient background for the space -->
+    <defs>
+        <radialGradient id="SpaceGradient" cx="0.5" cy="0.5" r="0.5" fx="0.5" fy="0.5">
+            <stop offset="0%" stop-color="#4646fa" stop-opacity="1" />
+            <stop offset="100%" stop-color="#06068c" stop-opacity="1" />
+        </radialGradient>
+    </defs>
+    <circle cx="25" cy="25" r="20" fill="url(#SpaceGradient)" />
+
+    
+    <circle cx="25" cy="25" r="20" fill="none" stroke="#d62d2d" stroke-width="2.2"/>
+    <polygon points="25,9 15,33 25,25 35,33" fill="#000" />
+    <!-- Middle -->
+    <!-- <circle cx="25" cy="15" r="1.4" fill="#FC3D21"/> -->
+  
+    <!-- Top Left -->
+    <!-- <circle cx="21" cy="20" r="1" fill="#FC3D21"/> -->
+  
+    <!-- Top Right -->
+    <!-- <circle cx="29" cy="20" r="1" fill="#FC3D21"/> -->
+  
+    <!-- Bottom Left -->
+    <ellipse cx="16" cy="34" rx="1" ry="2" fill="#FC3D21"/>
+    <circle cx="16" cy="32" r="1" fill="#FC3D21"/>
+  
+    <!-- Bottom Right -->
+    <ellipse cx="34" cy="34" rx="1" ry="2" fill="#FC3D21"/>
+    <circle cx="34" cy="32" r="1" fill="#FC3D21"/>
+
+</svg>
