@@ -15,6 +15,9 @@ const Nav = () => {
                 height={100}
             />
         </Link>
+        <p className="logo_text">Space Viewer</p>
+        <Link href="/daily">Picture of the Day</Link>
+        <Link href="/feed">Gallery</Link>
     </nav>
   )
 }

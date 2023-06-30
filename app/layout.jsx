@@ -1,4 +1,6 @@
-import Nav from '@components/Nav'
+// import '@styles/globals.css';
+
+import Nav from '../components/Nav';
 
 const layout = ({ children }) => {
   return (
@@ -7,7 +9,7 @@ const layout = ({ children }) => {
             <div className="main">
                 <div className="gradient"/>
             </div>
-            <main>
+            <main className="app">
                 <Nav />
                 {children}
             </main>

@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 .main {
+    z-index: -3;
     width: 100vw;
     min-height: 100vh;
     position: fixed;
@@ -12,10 +13,10 @@
 
 .gradient{
     height: fit-content;
-    z-index: 3;
+    z-index: -3;
     width: 100%;
     background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(12,12,153,1) 20%, rgba(0,212,255,1) 100%);
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(37,145,251,0.98) 0.1%, rgba(0,7,128,1) 99.8% );
     position: absolute;
     content: "";
     width: 100%;
@@ -23,14 +24,36 @@
     filter: blur(50px) saturate(120%);
     left: -50px;
     top: 5px;
-    opacity: 0.4;
+    opacity: 0.15;
 }
 
+.app {
+    display: flex; 
+    position: relative; 
+    z-index: 10; 
+    margin-left: auto;
+    margin-right: auto; 
+    flex-direction: column; 
+    /* justify-content: center;  */
+    align-items: center; 
+    max-width: 80rem; 
+}
 
+.logo_text{ 
+    color: #000000; 
+    font-size: 1.125rem;
+    line-height: 2rem; 
+    font-weight: 600; 
+}
 
+nav {
+    display: flex;
+    padding-top: 0.75rem; 
+    margin-bottom: 4rem; 
+    width: 100%; 
+}
 
-
-
+/* 
 html,
 body {
   padding: 0;
@@ -77,4 +100,4 @@ nav a {
   font-weight: bold;
   margin: 0 0.5rem;
   text-decoration: underline;
-}
+} */
