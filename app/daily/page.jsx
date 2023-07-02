@@ -1,36 +1,32 @@
-"use client"
+"use client";
 
-import {getLocationsData}  from '../api/api.js'; 
-
-import React from 'react';
 import { useEffect, useState } from 'react';
 
 const Daily = () => {
-    const [location, setLocation] = useState(null);
+    const [dailyData, setDailyData] = useState([]);
+
+    const fetchDailyPic = async () => {
+        
+        const response = await fetch('/api/daily');
+        const  responseData = await response.json();
+
+        setDailyData(responseData);
+    }
 
     useEffect(() => {
-        async function fetchData() {
-            try {
-                const data = await getLocationsData();
-                setLocation(data);
-                console.log("data", data);
-            } catch (e) {
-                console.error(e);
-            }
-        }
-        fetchData();
+        fetchDailyPic();
     }, []);
 
 
     // Render the location data
     return (
         <div>
-            {location ? (
+            {dailyData ? (
                 <div>
                     <div>Welcome to the Picture of the Day</div>
-                    <h4>{location.date}</h4>
-                    <h4>{location.explanation}</h4>
-                    <img src={location.hdurl} alt="NASA Picture of the Day" style={{ width: 800 }} />
+                    <h4>{dailyData.date}</h4>
+                    <h4>{dailyData.explanation}</h4>
+                    <img src={dailyData.hdurl} alt="NASA Picture of the Day" style={{ width: 800 }} />
                 </div>
             ) : (
                 <div>Loading...</div>
