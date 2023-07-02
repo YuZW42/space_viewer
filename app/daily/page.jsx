@@ -1,6 +1,6 @@
 "use client"
 
-import { getLocationData } from '../api/api.js';
+import {getLocationsData}  from '../api/api.js'; 
 
 import React from 'react';
 import { useEffect, useState } from 'react';
@@ -11,7 +11,7 @@ const Daily = () => {
     useEffect(() => {
         async function fetchData() {
             try {
-                const data = await getLocationData();
+                const data = await getLocationsData();
                 setLocation(data);
                 console.log("data", data);
             } catch (e) {

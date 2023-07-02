@@ -9,7 +9,7 @@ async function getLocationData() {
 // Formats the location data and returns a JSON object
 function formatLocationData(picture) {
   const { date, explanation, hdurl, title } = picture || {};
-
+  console.log('what is the date',date);
   return {
     date,
     explanation,
@@ -22,10 +22,10 @@ function formatLocationData(picture) {
 export default async function location(req, res) {
   try {
     const picture = await getLocationData();
-    console.log('Picture:', picture);
+    console.log('Picture', picture);
 
     const formattedData = formatLocationData(picture);
-
+    console.log('wtf',formattedData);
     res.status(200).json(formattedData);
   } catch (error) {
     console.error(error);
@@ -37,7 +37,7 @@ export default async function location(req, res) {
 (async () => {
   try {
     const picture = await getLocationData();
-    console.log('Picture:', picture);
+    console.log('Pictures:', picture);
 
     const formattedData = formatLocationData(picture);
 
