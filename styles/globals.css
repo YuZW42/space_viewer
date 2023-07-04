@@ -1,103 +1,40 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 .main {
-    z-index: -3;
-    width: 100vw;
-    min-height: 100vh;
+    z: 1;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.left {
+    height: 100vh;
+    width: 320px;
     position: fixed;
+}
+
+.right {
+    margin-left: 320px;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
     display: flex;
     justify-content: center;
-    padding: 120px 24px 24px 24px;
-    pointer-events: none;
 }
 
-.gradient{
-    height: fit-content;
-    z-index: -3;
-    width: 100%;
-    background: rgb(2,0,36);
-    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(37,145,251,0.98) 0.1%, rgba(0,7,128,1) 99.8% );
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 100%;
-    filter: blur(50px) saturate(120%);
-    left: -50px;
-    top: 5px;
-    opacity: 0.15;
+.frame{
+    width: 900px;
 }
 
-.app {
-    display: flex; 
-    position: relative; 
-    z-index: 10; 
-    margin-left: auto;
-    margin-right: auto; 
-    flex-direction: column; 
-    /* justify-content: center;  */
-    align-items: center; 
-    max-width: 80rem; 
+.window {
+    margin: 20px;
 }
 
-.logo_text{ 
-    color: #000000; 
-    font-size: 1.125rem;
-    line-height: 2rem; 
-    font-weight: 600; 
+.window h1 {
+    font-size: 50px;
+    color:#2e63b8;
 }
-
-nav {
-    display: flex;
-    padding-top: 0.75rem; 
-    margin-bottom: 4rem; 
-    width: 100%; 
-}
-
-/* 
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
-    Helvetica Neue, sans-serif;
-    padding: 0 2rem;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-  padding: 0;
-  margin: 0;
-}
-
-main {
-  min-height: 100vh;
-  padding: 1rem 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-
-input, textarea { 
-  display: block;
-  max-width: 300px;
-  margin: 0.5rem 0;
-}
-
-button {
-  background-color: #000000;
-  border: none;
-  color: white;
-  padding: 0.5rem 2rem;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  cursor: pointer;
-}
-
-nav a {
-  font-weight: bold;
-  margin: 0 0.5rem;
-  text-decoration: underline;
-} */
