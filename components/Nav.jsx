@@ -24,7 +24,7 @@ const Nav = () => {
           <div className={styles.menu}>
               <Link href="/">Home</Link>
               <Link href="/daily">Picture of the Day</Link>
-              <Link href="/feed">Gallery</Link>
+              <Link href="/gallery">Gallery</Link>
           </div>
       </div>
     </div>

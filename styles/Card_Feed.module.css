@@ -1,0 +1,12 @@
+.section {
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+}
+
+.array {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 12px;
+}

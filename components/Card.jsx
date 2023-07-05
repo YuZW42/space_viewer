@@ -21,7 +21,7 @@ const Card = () => {
             <div className={styles.description}>
                 <h3>Date</h3>
                 <p>Title</p>
-                <Link href="/feed">
+                <Link href="/gallery">
                     <h4>View</h4>
                 </Link>
             </div>

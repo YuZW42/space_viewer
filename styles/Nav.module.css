@@ -43,4 +43,8 @@
     color: #000;
     margin: 0;
     padding: 0;
+    transition: color 0.3s ease;
+}
+.menu a:hover {
+    color: #706b5e; 
 }
