@@ -1,8 +1,8 @@
 "use client";
-import { useEffect, useState } from 'react';
-import DatePicker from 'react-datepicker';
-import 'react-datepicker/dist/react-datepicker.css';
-import { format, parseISO } from 'date-fns';
+import { useEffect, useState } from "react";
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
+import { format, parseISO } from "date-fns";
 
 const Daily = () => {
   const [dailyData, setDailyData] = useState([]);
@@ -16,17 +16,17 @@ const Daily = () => {
 
   const formatDateFn = (date) => {
     if (date) {
-      const formattedDate = format(date, 'yyyy-MM-dd');
+      const formattedDate = format(date, "yyyy-MM-dd");
       return formattedDate;
     }
-    return '';
+    return "";
   };
 
   useEffect(() => {
     fetchDailyPic(selectedDate);
   }, [selectedDate]);
   useEffect(() => {
-    fetchDailyPic('');
+    fetchDailyPic("");
   }, []);
 
   // Render the location data
