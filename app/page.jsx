@@ -1,8 +1,6 @@
 import '../styles/globals.css'
 import styles from '../styles/Home.module.css'
 
-import React from 'react'
-
 const page = () => {
   return (
     <section className={styles.section}>
