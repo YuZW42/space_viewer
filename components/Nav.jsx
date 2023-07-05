@@ -1,4 +1,6 @@
 "use client"
+import '../styles/globals.css';
+import styles from '../styles/Nav.module.css'
 
 import Link from 'next/link'
 import Image from 'next/image'
@@ -6,19 +8,26 @@ import { useState, useEffect } from "react"
 
 const Nav = () => {
   return (
-    <nav>
-        <Link href="/">
-            <Image
-                src="/assets/icons/logo.svg"
-                alt="Space Viewer Logo"
-                width={100}
-                height={100}
-            />
-        </Link>
-        <p className="logo_text">Space Viewer</p>
-        <Link href="/daily">Picture of the Day</Link>
-        <Link href="/feed">Gallery</Link>
-    </nav>
+    <div className={styles.bg}>
+      <div className={styles.container}>
+          <div>
+              <Link href="/" className={styles.title}>
+                  <Image
+                      src="/assets/icons/logo.svg"
+                      alt="Space Viewer Logo"
+                      width={60}
+                      height={60}
+                  />
+                  <p href="/">Space Viewer</p>
+              </Link>
+          </div>
+          <div className={styles.menu}>
+              <Link href="/">Home</Link>
+              <Link href="/daily">Picture of the Day</Link>
+              <Link href="/feed">Gallery</Link>
+          </div>
+      </div>
+    </div>
   )
 }
 

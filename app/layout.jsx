@@ -1,17 +1,20 @@
-// import '@styles/globals.css';
+import '../styles/globals.css';
 
 import Nav from '../components/Nav';
 
 const layout = ({ children }) => {
   return (
     <html lang="en">
-        <body>
-            <div className="main">
-                <div className="gradient"/>
-            </div>
-            <main className="app">
+        <body className={"main"}>
+            <div className={"left"}>
                 <Nav />
-                {children}
+            </div>
+            <main className={"right"}>
+                <div  className={"frame"}>
+                    <div className={"window"}>
+                        {children}
+                    </div>
+                </div>
             </main>
         </body>
     </html>

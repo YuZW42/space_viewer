@@ -1,0 +1,46 @@
+.bg {
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    background-color: lightblue;
+    height: 100%;
+}
+.container {
+    position: relative;
+    top: 10px;
+}
+.container p {
+    font-size: 22px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    text-decoration: none;
+    padding: 0 8px;
+}
+
+.menu {
+    position: relative;
+    top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 16px;
+}
+.menu a {
+    font-size: 18px;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}

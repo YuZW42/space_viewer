@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&display=swap');
+
+.section h1 {
+    font-size: 50px;
+    color:#2e63b8;
+}
+
+.section p {
+    font: 30px 'Montserrat', sans-serif;
+    font-size: 22px;
+    color: black;
+}

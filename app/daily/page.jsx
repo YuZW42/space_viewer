@@ -41,7 +41,7 @@ const Daily = () => {
 
       {dailyData ? (
         <div>
-          <div>Welcome to the Picture of the Day</div>
+          <h1>Welcome to the Picture of the Day</h1>
           <h4>{dailyData.date}</h4>
           <h4>{dailyData.explanation}</h4>
           <img
