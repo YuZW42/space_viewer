@@ -1,6 +1,6 @@
 import '../styles/globals.css'
 import styles from '../styles/Home.module.css'
-import Word_Cloud from '../components/Word_Cloud'
+import Word_Cloud from '../components/word_cloud'
 
 const page = () => {
   return (
