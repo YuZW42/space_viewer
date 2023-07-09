@@ -39,7 +39,7 @@ const Card_Feed = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault()
-        try {
+
             const response = await fetch(`/api/gallery/search?id=${encodeURIComponent(query)}`);
             const data = await response.json();
 
@@ -47,9 +47,7 @@ const Card_Feed = () => {
                 alert("No results found")
             }
             setCardData(data.collection.items)
-        } catch (error) {
-            console.error('An error occurred:', error);
-        }
+
     }
 
     return (
