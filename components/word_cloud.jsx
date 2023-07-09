@@ -13,7 +13,15 @@ const WordCloud = () => {  // Ensure words are passed as a prop
       const container = tagCloudRef.current;
       const texts = Words(); // Ensure that 'words' is an array of strings
       
-      const options = {};
+      const options = {
+        radius: 260,
+        maxSpeed: 'fast',
+        fontWeight: 'bold',
+        fontFamily: 'Arial, sans-serif',
+        backgroundColor: '#ffffff',
+        maxFontSize: 48,
+        minFontSize: 12,
+      };
 
       // Use the TagCloud library here
       
@@ -32,7 +40,6 @@ const WordCloud = () => {  // Ensure words are passed as a prop
 
   return (
     <div className="tagcloud-container">
-      
       <div ref={tagCloudRef} className="tagcloud" />
     </div>
   );

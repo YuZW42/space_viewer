@@ -10,3 +10,42 @@
     justify-content: space-around;
     margin: 0 12px;
 }
+
+.bar_frame {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+}
+
+.form {
+    width: 600px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+    overflow: hidden;
+}
+
+.search_bar {
+    font-size: 17px;
+    border: none;
+    outline: none;
+    width: 80%;
+    height: 100%;
+    margin-left: 8px
+}
+
+.button {
+    font-size: 17px;
+    width: 20%;
+    height: 120%;
+    background-color: lightblue;
+    border: none;
+    border-left: 1px solid;
+    cursor: pointer;
+}
